@@ -50,7 +50,7 @@ Let us understand via a simple real-life example:
 - As it is a language, so it has its own structure and syntax for defining instructions. Right?
 
 
-# Comparison of High-Level and Low-Level Languages
+### Comparison of High-Level and Low-Level Languages
 
 Programming languages can be categorized into high-level and low-level languages, each serving different purposes in software development. High-level languages are closer to human languages and are designed to be more programmer-friendly, whereas low-level languages are closer to machine code and are more efficient for hardware-level programming. The following table outlines the key differences between these two types of languages.
 
@@ -65,7 +65,7 @@ Programming languages can be categorized into high-level and low-level languages
 | Translation Requirement              | Needs a compiler or interpreter.           | Needs an assembler.                        |
 | Usage                                | Widely used for programming.               | Not commonly used in modern programming.   |
 
-# Difference Between Compiler and Interpreter
+### Difference Between Compiler and Interpreter
 
 | Aspect                                   | Compiler                                                                                                         | Interpreter                                                                                             |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -97,7 +97,7 @@ Programming languages can be categorized into high-level and low-level languages
 - Many modern languages, like C++, Java, and Python are directly influenced by C’s syntax and structure.
 - So understanding C makes it much easier to learn these languages and grasp advanced programming principles. 
 
-# Structure of a C Program
+### Structure of a C Program
 
 The structure of a C program is divided into six main sections, each of which serves a specific purpose. This organized approach makes programs easier to read, modify, document, and debug.
 
