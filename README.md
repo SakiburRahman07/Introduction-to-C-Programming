@@ -1,12 +1,12 @@
 
-### Goal
+# Goal
 - Our goal is NOT to teach you everything about the language C.
 - Our goal is to make you understand
     - How computer interpret a language,
     - How the language get executed,
     - What a language can do
 
-### What is programming?
+# What is programming?
 Programming is the process of **creating instructions for a computer to follow**, to perform specific tasks/goal.
 Let us understand via a simple real-life example:
 - Our goal is to **teach a robot to make tea**.
@@ -42,7 +42,7 @@ Let us understand via a simple real-life example:
     - Programming is the process of giving computers specific instructions to solve problems or perform tasks.
     - It is like writing a detailed list of steps for the computer to follow, which allows it to do things automatically, like performing calculations, organizing data, or running apps and games.
 
-### What is programming language?
+# What is programming language?
 - A set of instruction to enable human to communicate with computer.
 - Remember, computer only understand 0 and 1. And it's very hard for us to write instruction using 0,1 only.
 - Here a programming language saves us by allowing us to write instructions without dealing with low level machine code(0,1).
@@ -50,7 +50,7 @@ Let us understand via a simple real-life example:
 - As it is a language, so it has its own structure and syntax for defining instructions. Right?
 
 
-### Comparison of High-Level and Low-Level Languages
+# Comparison of High-Level and Low-Level Languages
 
 Programming languages can be categorized into high-level and low-level languages, each serving different purposes in software development. High-level languages are closer to human languages and are designed to be more programmer-friendly, whereas low-level languages are closer to machine code and are more efficient for hardware-level programming. The following table outlines the key differences between these two types of languages.
 
@@ -65,7 +65,7 @@ Programming languages can be categorized into high-level and low-level languages
 | Translation Requirement              | Needs a compiler or interpreter.           | Needs an assembler.                        |
 | Usage                                | Widely used for programming.               | Not commonly used in modern programming.   |
 
-### Difference Between Compiler and Interpreter
+# Difference Between Compiler and Interpreter
 
 | Aspect                                   | Compiler                                                                                                         | Interpreter                                                                                             |
 |------------------------------------------|------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
@@ -85,19 +85,19 @@ Programming languages can be categorized into high-level and low-level languages
 | **Object Code**                          | Saves object code for future use.                                                                               | Does not save object code for future use.                                                               |
 | **Example Languages**                    | C, C++, C#, etc.                                                                                                | Python, Ruby, Perl, SNOBOL, MATLAB, etc.                                                                |
 
-### What is C?
+# What is C?
 - It is a programming language.
 - It allows us to work closely with the computer’s hardware.
 - It gives us direct control over memory through features like pointers (variables that store memory addresses) and let us perform operations to manipulate data at the memory level.
 - C is widely used in building Operating Systems, Embedded Systems, Game Development, Compiler Development etc.
 
-### Why C?
+# Why C?
 - It helps us to understand how computer works at low level.
 - It helps us understand the core programming concepts, like managing memory and working with low-level data, which are essential for developing efficient software. 
 - Many modern languages, like C++, Java, and Python are directly influenced by C’s syntax and structure.
 - So understanding C makes it much easier to learn these languages and grasp advanced programming principles. 
 
-### Structure of a C Program
+# Structure of a C Program
 
 The structure of a C program is divided into six main sections, each of which serves a specific purpose. This organized approach makes programs easier to read, modify, document, and debug.
 
@@ -242,7 +242,7 @@ Below is the explanation of the program, describing its meaning and use.
 4. **Output of the Program**
 
 
-### First C program
+# First C program
 - Let us create a simple program that will print "Hello World!" to the console.
 - Code:
     ```c
@@ -259,7 +259,7 @@ Below is the explanation of the program, describing its meaning and use.
     - `printf("Hello, World!\n");`: Prints "Hello, World!" followed by a newline character.
     - `return 0;`: Indicates successful completion of the program.
 
-### Program Execution
+# Program Execution
 This is the part where our code written in C, is converted into computer understandable format. In short, it does the translation from C code to binary code. The steps are:
 
 - **Writing the Code** 
@@ -425,7 +425,7 @@ This is the part where our code written in C, is converted into computer underst
     - The program ends with an exit status to the operating system(usually 0 for success), and the OS frees any used resourcess.
 
 
-### main() function
+# main() function
 - Remember, our code can have different function and instructions between them.
 - We can't start executing randomly from anywhere. It doesn't make sense.
 - That's why the `main()` function is executed at the first.
