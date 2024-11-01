@@ -97,6 +97,151 @@ Programming languages can be categorized into high-level and low-level languages
 - Many modern languages, like C++, Java, and Python are directly influenced by C’s syntax and structure.
 - So understanding C makes it much easier to learn these languages and grasp advanced programming principles. 
 
+# Structure of a C Program
+
+The structure of a C program is divided into six main sections, each of which serves a specific purpose. This organized approach makes programs easier to read, modify, document, and debug.
+
+---
+
+## 1. Documentation
+
+The documentation section provides information about the program, such as its description, author name, and creation date. This information is placed in the form of comments at the beginning of the program. Documentation is ignored by the compiler and serves as a guide for anyone reading the code.
+
+```c
+// Program: Sum of two numbers
+// Author: Your Name
+// Date: YYYY-MM-DD
+
+/*
+    Program: Sum of two numbers
+    Author: Your Name
+    Date: YYYY-MM-DD
+    Description: This program calculates the sum of two numbers.
+*/
+```
+
+## Preprocessor Section
+
+The **Preprocessor Section** is where all header files and macro definitions are included at the start of a C program. These files and definitions are processed before the compilation phase, allowing the program to use library functions, constants, and macros.
+
+### Header Files
+
+Header files contain declarations of standard library functions, macros, and types. Including them in a program enables access to predefined functionality, such as input/output operations, mathematical functions, and memory allocation.
+
+**Example:**
+
+```c
+#include <stdio.h>    // Standard I/O library for functions like printf() and scanf()
+#include <stdlib.h>   // Standard library for memory allocation and process control
+#include <math.h>     // Math library for functions like sqrt(), pow(), etc.
+
+```
+### Definition
+
+Preprocessors are programs that process source code before compilation. There are multiple steps involved in writing and executing a program. Preprocessor directives start with the `#` symbol. The `#define` preprocessor is used to create a constant throughout the program. Whenever this name is encountered by the compiler, it is replaced by the actual piece of defined code.
+
+**Example:**
+
+```c
+#define PI 3.14
+```
+
+### Global Declaration
+
+The global declaration section contains global variables, function declarations, and static variables. Variables and functions declared in this scope can be used anywhere in the program.
+
+**Example:**
+
+```c
+int num = 18;
+```
+### Main() Function
+
+Every C program must have a `main` function. The `main()` function of the program is written in this section. Operations such as declaration and execution are performed inside the curly braces of the main program. The return type of the `main()` function can be either `int` or `void`. The `void main()` tells the compiler that the program will not return any value, while `int main()` indicates that the program will return an integer value.
+
+**Example:**
+
+```c
+void main()
+```
+
+### Sub Programs
+
+User-defined functions are called in this section of the program. The control of the program is shifted to the called function whenever it is invoked from the `main()` or outside the `main()` function. These functions are specified according to the requirements of the programmer.
+
+**Example:**
+
+```c
+int sum(int x, int y)
+{
+    return x + y;
+}
+```
+
+### Structure of a C Program with Example
+
+**Example:** Below is a C program to find the sum of two numbers:
+
+```c
+// Documentation
+/**                     
+ * file: sum.c
+ * author: you
+ * description: program to find sum.
+ */
+
+// Link
+#include <stdio.h>      
+
+// Definition
+#define X 20 
+
+// Global Declaration
+int sum(int y);   
+
+// Main() Function
+int main(void)       
+{
+    int y = 55;
+    printf("Sum: %d", sum(y));
+    return 0;
+}
+
+// Subprogram
+int sum(int y) 
+{
+    return y + X;
+}
+
+```
+### Output
+**75**
+
+
+### Explanation of the Above Program
+
+Below is the explanation of the program, describing its meaning and use.
+
+| Sections | Description |
+|----------|-------------|
+| `/**`<br> `* file: sum.c`<br> `* author: you`<br> `* description: program to find sum.`<br> `*/` | This is the comment section and part of the documentation for the code. |
+| `#include <stdio.h>` | This header file is used for standard input-output. It belongs to the preprocessor section. |
+| `#define X 20` | This is the definition section. It allows the use of the constant `X` in the code. |
+| `int sum(int y);` | This is the global declaration section, which includes the function declaration that can be used anywhere in the program. |
+| `int main()` | The `main()` function is the first function executed in a C program. |
+| `{…}` | These curly braces mark the beginning and end of the `main` function. |
+| `printf("Sum: %d", sum(y));` | The `printf()` function is used to print the sum on the screen. |
+| `return 0;` | Since `int` is used as the return type, we must return `0`, indicating that the program executed successfully without errors. |
+| `int sum(int y)`<br>`{`<br>`    return y + X;`<br>`}` | This is the subprogram section, which includes the user-defined function that is called in the `main()` function. |
+
+### Steps Involved in the Compilation and Execution of a C Program:
+
+1. **Program Creation**
+2. **Compilation of the Program**
+3. **Execution of the Program**
+4. **Output of the Program**
+
+
 ### First C program
 - Let us create a simple program that will print "Hello World!" to the console.
 - Code:
@@ -116,9 +261,6 @@ Programming languages can be categorized into high-level and low-level languages
 
 ### Program Execution
 This is the part where our code written in C, is converted into computer understandable format. In short, it does the translation from C code to binary code. The steps are:
-
-![Compilation Process in C Program](Compilation-Process-in-C.png)
-
 
 - **Writing the Code** 
     - At first, we write the C code in a text editor and saves it with a `.c` extension.
